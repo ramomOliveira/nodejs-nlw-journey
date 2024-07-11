@@ -17,7 +17,7 @@ model Trip {
 
   participants Participant[]
   activities Activity[]
-  links Links[]
+  links Link[]
 
   @@map("trips")
 }
@@ -45,7 +45,7 @@ model Activity {
   @@map("activities")
 }
 
-model Links {
+model Link {
   id String @id @default(uuid())
   title String
   url String
