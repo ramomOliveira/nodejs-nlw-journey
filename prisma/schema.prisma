@@ -36,8 +36,8 @@ model Participant {
 
 model Activity {
   id String @id @default(uuid())
-  tiltle String
-  accours_at DateTime
+  title String
+  occurs_at DateTime
 
   trip_id String
   trip Trip @relation(fields: [trip_id], references: [id])
